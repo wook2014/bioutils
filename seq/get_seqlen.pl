@@ -46,6 +46,8 @@ my $o_seqi  = Bio::SeqIO->new(
 
 while (my $o_seq = $o_seqi->next_seq) {
     # Output seq length directly.
+    print $o_seq->id;
+    print "\t";
     say $o_seq->length;
 }
 
